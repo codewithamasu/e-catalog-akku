@@ -12,10 +12,10 @@ function App() {
     <div style={{fontFamily: 'Montserrat, sans-serif'}}>
      <Routes>
         <Route path='/' element={<MainPage/>}/>
-        <Route path='/products/export' element={<Export/>}/>
-        <Route path='/products/four-wheels' element={<FourWheels/>}/>
-        <Route path='/products/industry' element={<Industry/>}/>
-        <Route path='/products/truck-and-heavy-equipment' element={<TruckAndHeavyEquipment/>}/>
+        <Route path='/product/export' element={<Export/>}/>
+        <Route path='/product/four-wheels' element={<FourWheels/>}/>
+        <Route path='/product/industry' element={<Industry/>}/>
+        <Route path='/product/truck-and-heavy-equipment' element={<TruckAndHeavyEquipment/>}/>
      </Routes>
     </div>
   )
