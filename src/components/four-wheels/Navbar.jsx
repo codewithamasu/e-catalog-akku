@@ -12,7 +12,7 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="#about">About</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <details>
@@ -22,7 +22,7 @@ function Navbar() {
                   <a href="/product/industry">Industry</a>
                 </li>
                 <li>
-                  <a href="/product/four-wheels">Four Wheels</a>
+                  <a href="#">Four Wheels</a>
                 </li>
                 <li>
                   <a href="/product/two-wheels">Two Wheels</a>
@@ -66,7 +66,7 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href='#about'>About</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a>Products</a>
@@ -75,7 +75,7 @@ function Navbar() {
                   <a href="/product/industry">Industry</a>
                 </li>
                 <li>
-                  <a href="/product/four-wheels">Four Wheels</a>
+                  <a href="#">Four Wheels</a>
                 </li>
                 <li>
                   <a href="/product/two-wheels">Two Wheels</a>
