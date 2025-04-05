@@ -472,9 +472,9 @@ const products = {
       image: '/src/assets/images/two-wheels/Rubber-Bushing.png',
     },
     {
-      name: 'Ruber Link Stopper',
+      name: 'Rubber Link Stopper',
       description: 'Link stopper for motorcycles',
-      image: '/src/assets/images/two-wheels/Ruber-Link-Stopper.png',
+      image: '/src/assets/images/two-wheels/Rubber-Link-Stopper.png',
     },
     {
       name: 'Rubber Main Step',

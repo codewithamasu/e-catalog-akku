@@ -1,10 +1,11 @@
 import React from 'react'
 import products from '../utils/product'
 import ProductCard from '../components/ProductCard'
-import Navbar from '../components/truck-heavy-equipment/Navbar'
+import Navbar from '../components/two-wheels/Navbar'
 import { nanoid } from 'nanoid'
-function Export() {
-  const exportProducts = products.export || []
+function TwoWheels() {
+  
+  const twoWheelsProducts = products.twoWheels || []
 
   return (
     <div>
@@ -12,7 +13,7 @@ function Export() {
         <Navbar />
         {/* Banner */}
         <div
-          className="bg-[url('/src/assets/images/export/banner.png')] 
+          className="bg-[url('/src/assets/images/two-wheels/banner.png')] 
           w-full
           h-[300px]
           bg-cover 
@@ -21,7 +22,7 @@ function Export() {
         >
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white">
-              Export Products
+              Two Wheels Products
             </h1>
           </div>
         </div>
@@ -29,7 +30,7 @@ function Export() {
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {exportProducts.map((product) => (
+          {twoWheelsProducts.map((product) => (
             <ProductCard
               key={nanoid()}
               description={product.description}
@@ -43,4 +44,4 @@ function Export() {
   )
 }
 
-export default Export
+export default TwoWheels

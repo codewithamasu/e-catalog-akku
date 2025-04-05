@@ -1,6 +1,6 @@
 import React from 'react'
 import products from '../utils/product'
-import ProductCard from '../components/industry/ProductCard'
+import ProductCard from '../components/ProductCard'
 import Navbar from '../components/four-wheels/Navbar'
 import { nanoid } from 'nanoid'
 function FourWheels() {

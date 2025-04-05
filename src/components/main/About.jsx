@@ -1,15 +1,23 @@
-import React from 'react'
-import CompanyImage from '../../assets/images/company-logo.png' // Add your company image
+import React, { useState } from 'react'
+import CompanyImage from '../../assets/images/company-logo.png'
 
 function About() {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
   return (
     <div className="hero bg-base-200 min-h-screen" id="about">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
-          src="https://www.anekakomkar.co.id/images/clients/7uTICVPCojWtH4pInByk.png"
-          alt="Company Building"
-          className="max-w-sm rounded-lg shadow-2xl hidden lg:block" // Added hidden lg:block
-        />
+        <div className="relative max-w-sm">
+          {!imageLoaded && <div className="skeleton w-96 h-half"></div>}
+          <img
+            src="https://www.anekakomkar.co.id/images/clients/7uTICVPCojWtH4pInByk.png"
+            alt="Company Building"
+            className={`rounded-lg shadow-2xl hidden lg:block ${
+              imageLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+            onLoad={() => setImageLoaded(true)}
+          />
+        </div>
         <div className="lg:mr-8 sm:p-4">
           <h1 className="text-5xl font-bold mb-6">About Company</h1>
           <div className="space-y-6">
